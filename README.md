@@ -1,6 +1,6 @@
-# 此範例為 **倉庫系統 (Warehouse Management System, WMS)** 的使用者資料表，主要用於儲存系統使用者的基本資訊與角色設定。
+# 此範例為 **倉庫系統 (Warehouse Management System, WMS)
 
-此範例為 MySQL** WMS02 使用者資料表
+此範例為 MySQL 的使用者資料表，主要用於儲存系統使用者的基本資訊與角色設定。** DATABASE :WMS02 使用者資料表 **
 
 ## 建表與測試資料
 
@@ -42,18 +42,18 @@ spring.datasource
 
 
 ```
-jdbc:mysql://localhost:3306/wms02?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Taipei
+jdbc:mysql://localhost:8080/wms02?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Taipei
 ```
 拆解：
 
 jdbc:mysql:// → 告訴 Java 要用 MySQL 協議。
 
-localhost:3306 → MySQL 伺服器在本機 (localhost)，使用預設埠號 3306。
++ localhost:8080 → MySQL 伺服器在本機 (localhost)，使用預設埠號 8080。
 
-wms02 → 你要連的資料庫名稱。
++ wms02 → 你要連的資料庫名稱。
 
-useUnicode=true&characterEncoding=utf-8 → 避免中文亂碼。
++ useUnicode=true&characterEncoding=utf-8 → 避免中文亂碼。
 
-useSSL=false → 不使用 SSL，否則會跳警告。
++ useSSL=false → 不使用 SSL，否則會跳警告。
 
 serverTimezone=Asia/Taipei → 設定時區，避免時間錯誤。
