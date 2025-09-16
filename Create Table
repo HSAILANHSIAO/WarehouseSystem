@@ -26,5 +26,3 @@ VALUES ('admin01', '系統管理員', 'admin123', 30, 1, '0911222333', 1, 'Y');
 -- 普通帳號
 INSERT INTO user (no, name, password, age, sex, phone, role_id, isvalid)
 VALUES ('user01', '王小明', 'userpwd', 25, 0, '0922333444', 2, 'Y');
-
-```
