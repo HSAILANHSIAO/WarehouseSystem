@@ -1,6 +1,6 @@
-# WMS02 使用者資料表
+# 此範例為 **倉庫系統 (Warehouse Management System, WMS)** 的使用者資料表，主要用於儲存系統使用者的基本資訊與角色設定。
 
-此範例為 **倉庫系統 (Warehouse Management System, WMS)** 的使用者資料表，主要用於儲存系統使用者的基本資訊與角色設定。
+此範例為 MySQL** WMS02 使用者資料表
 
 ## 建表與測試資料
 
