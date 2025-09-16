@@ -6,34 +6,25 @@
 
 ```sql
 -- 建表語法
-CREATE TABLE user (
-    id INT AUTO_INCREMENT PRIMARY KEY COMMENT '主鍵',
-    no VARCHAR(20) NULL COMMENT '帳號',
-    name VARCHAR(100) NOT NULL COMMENT '名字',
-    password VARCHAR(20) NOT NULL COMMENT '密碼',
-    age INT NULL COMMENT '年齡',
-    sex INT NULL COMMENT '性別',
-    phone VARCHAR(20) NULL COMMENT '電話',
-    role_id INT NULL COMMENT '角色 (0=超級管理員, 1=管理員, 2=普通帳號)',
-    isvalid VARCHAR(4) DEFAULT 'Y' NULL COMMENT '是否有效，Y有效，其他無效'
-) CHARACTER SET = utf8;
-```
+
+-- 欄位說明
+-- id       : 主鍵，自動遞增
+-- no       : 帳號（例如員工編號、登入帳號）
+-- name     : 姓名
+-- password : 密碼（建議實務上使用雜湊加密，不要存明碼）
+-- age      : 年齡
+-- sex      : 性別（建議定義 0=女，1=男）
+-- phone    : 電話
+-- role_id  : 角色（0=超管、1=管理員、2=一般帳號）
+-- isvalid  : 是否有效（預設 Y=有效，其他=無效）
+
+
+
+
 
 
 ```
 -- 測試資料
-
--- 超級管理員
-INSERT INTO user (no, name, password, age, sex, phone, role_id, isvalid)
-VALUES ('sa', '超級管理員', '123', 18, 1, '111', 0, 'Y');
-
--- 管理員
-INSERT INTO user (no, name, password, age, sex, phone, role_id, isvalid)
-VALUES ('admin01', '系統管理員', 'admin123', 30, 1, '0911222333', 1, 'Y');
-
--- 普通帳號
-INSERT INTO user (no, name, password, age, sex, phone, role_id, isvalid)
-VALUES ('user01', '王小明', 'userpwd', 25, 0, '0922333444', 2, 'Y');
 
 ```
 
