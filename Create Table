@@ -1,6 +1,4 @@
-## 建表與測試資料
 
-```sql
 -- 建表語法
 CREATE TABLE user (
     id INT AUTO_INCREMENT PRIMARY KEY COMMENT '主鍵',
@@ -13,11 +11,9 @@ CREATE TABLE user (
     role_id INT NULL COMMENT '角色 (0=超級管理員, 1=管理員, 2=普通帳號)',
     isvalid VARCHAR(4) DEFAULT 'Y' NULL COMMENT '是否有效，Y有效，其他無效'
 ) CHARACTER SET = utf8;
-```
 
 
-```
--- 測試資料
+
 
 -- 超級管理員
 INSERT INTO user (no, name, password, age, sex, phone, role_id, isvalid)
